@@ -8,19 +8,21 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #000000;
       font-family: Arial, sans-serif;
+      background-color: #000000;
       color: #ffffff;
       text-align: center;
     }
 
-    .container {
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.8);
+      min-height: 100vh;
       padding: 40px 20px;
     }
 
     .logo {
       max-width: 220px;
-      margin-bottom: 30px;
+      margin: 0 auto 30px;
     }
 
     h1 {
@@ -31,8 +33,8 @@
     h1 span:first-child {
       display: block;
       font-size: 42px;
-      font-weight: bold;
       color: #ffffff;
+      font-weight: bold;
     }
 
     h1 span:last-child {
@@ -47,47 +49,33 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      margin: 12px auto;
-      padding: 14px 20px;
-      width: 260px;
-      border-radius: 10px;
+      margin: 10px auto;
+      padding: 12px 20px;
       font-size: 18px;
-      font-weight: bold;
       text-decoration: none;
-      color: white;
+      border-radius: 8px;
+      width: 250px;
+      font-weight: bold;
+      background-color: transparent;
+      border: 2px solid #777777;
+      color: #bbbbbb;
       transition: 0.3s;
     }
 
     .btn svg {
       width: 22px;
       height: 22px;
-      fill: white;
-    }
-
-    .instagram {
-      background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
-    }
-
-    .tiktok {
-      background: #000000;
-    }
-
-    .whatsapp {
-      background: #25D366;
-    }
-
-    .viber {
-      background: #7360f2;
+      fill: currentColor;
     }
 
     .btn:hover {
-      opacity: 0.85;
-      transform: scale(1.02);
+      background-color: #777777;
+      color: #000000;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="overlay">
     <img src="IMG_0585.jpeg" alt="Логотип" class="logo" />
 
     <h1>
@@ -96,13 +84,13 @@
     </h1>
 
     <!-- Instagram -->
-    <a href="https://www.instagram.com/22km.sk" target="_blank" class="btn instagram">
+    <a href="https://www.instagram.com/22km.sk" target="_blank" class="btn">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 202.66A53.34 53.34 0 1 0 277.34 256 53.38 53.38 0 0 0 224 202.66Zm124.71-41a54 54 0 0 0-30.56-30.56C292.16 120 224 120 224 120s-68.16 0-94.15 11.06a54 54 0 0 0-30.56 30.56C88 155.84 88 224 88 224s0 68.16 11.06 94.15a54 54 0 0 0 30.56 30.56C155.84 360 224 360 224 360s68.16 0 94.15-11.06a54 54 0 0 0 30.56-30.56C360 292.16 360 224 360 224s0-68.16-11.29-94.34ZM224 338c-62.64 0-113.76-51.12-113.76-114S161.36 110 224 110s113.76 51.12 113.76 114S286.64 338 224 338Zm72-186a16 16 0 1 1-16-16 16 16 0 0 1 16 16Z"/></svg>
       Instagram
     </a>
 
     <!-- TikTok -->
-    <a href="https://www.tiktok.com/@22km.sk" target="_blank" class="btn tiktok">
+    <a href="https://www.tiktok.com/@22km.sk" target="_blank" class="btn">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448,209.8v66.7c-22.2,1.4-44.5-3.7-64.3-15.3c-5.9-3.4-11.6-7.3-17.1-11.5v140.1c0,65.9-53.3,119.2-119.2,119.2
         c-65.9,0-119.2-53.3-119.2-119.2s53.3-119.2,119.2-119.2c3.6,0,7.2,0.2,10.7,0.6v66.9c-3.5-0.7-7.1-1.1-10.7-1.1
         c-29.1,0-52.7,23.6-52.7,52.7s23.6,52.7,52.7,52.7s52.7-23.6,52.7-52.7V0h66.7c1.2,47.7,39.1,85.9,86.8,88.2V209.8z"/></svg>
@@ -110,13 +98,13 @@
     </a>
 
     <!-- WhatsApp -->
-    <a href="https://wa.me/421951776179" target="_blank" class="btn whatsapp">
+    <a href="https://wa.me/421951776179" target="_blank" class="btn">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339-8.6 236.3-24.4 152 40.6 72.9 101.3 54.3 214.6 110 294.8L77.8 403.2l112.5-29.7c21.5 5.8 43.5 8.9 65.7 8.9 74.7 0 143.6-38.5 177.7-102.4 35.4-66.1 14.6-153.6-52.8-183.7zM222.8 350.7c-20.5 0-40.7-3.9-59.5-11.5l-8.4-3.6-66.7 17.6 17.8-64.1-4.5-8.7C74.4 245.6 69.4 180.2 117 137.2 175.4 82.2 278 96.5 318.9 174.3c31.8 63.3-2.5 140.5-76.1 164.7-7.3 2.4-14.8 3.7-22.3 3.7z"/></svg>
       WhatsApp
     </a>
 
     <!-- Viber -->
-    <a href="viber://chat?number=+421951776179" target="_blank" class="btn viber">
+    <a href="viber://chat?number=+421951776179" target="_blank" class="btn">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M346.5 0H37.5C16.8 0 0 16.8 0 37.5v437c0 20.7 16.8 37.5 37.5 37.5h309c20.7 0 37.5-16.8 37.5-37.5v-437C384 16.8 367.2 0 346.5 0zm-35 354.8c0 19.7-16 35.7-35.7 35.7H108.2c-19.7 0-35.7-16-35.7-35.7v-197c0-19.7 16-35.7 35.7-35.7h167.6c19.7 0 35.7 16 35.7 35.7v197z"/></svg>
       Viber
     </a>
