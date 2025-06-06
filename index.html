@@ -6,41 +6,67 @@
   <title>22KM AUTO DETAILING</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #000000; /* чорний фон */
-      color: #FFFFFF; /* білий текст */
+      background-image: url('589A587F-C8A6-4A1C-BADE-267A7BBAF846.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #ffffff;
       text-align: center;
     }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7); /* темна плівка поверх фону */
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .logo {
+      max-width: 220px;
+      margin: 0 auto 30px;
+    }
+
     h1 {
-      font-size: 36px;
-      letter-spacing: 4px;
+      font-size: 32px;
+      color: #FFD700;
       text-transform: uppercase;
       margin-bottom: 40px;
-      color: #FFD700; /* золотий заголовок */
+      letter-spacing: 3px;
     }
+
     .btn {
       display: inline-block;
       margin: 10px;
       padding: 15px 25px;
       font-size: 18px;
-      color: white;
+      color: #FFD700;
       text-decoration: none;
       border-radius: 8px;
-      width: 200px;
+      width: 220px;
       font-weight: bold;
+      background-color: transparent;
+      border: 2px solid #FFD700;
+      transition: 0.3s;
     }
-    .instagram { background: #E1306C; }
-    .tiktok { background: #000000; border: 2px solid white; }
-    .whatsapp { background: #25D366; }
-    .viber { background: #665CAC; }
+
+    .btn:hover {
+      background-color: #FFD700;
+      color: #000000;
+    }
   </style>
 </head>
 <body>
-  <h1>22KM AUTO DETAILING</h1>
-  <a href="https://www.instagram.com/22km.sk" target="_blank" class="btn instagram">Instagram</a><br/>
-  <a href="https://www.tiktok.com/@22km.sk" target="_blank" class="btn tiktok">TikTok</a><br/>
-  <a href="https://wa.me/421951776179" target="_blank" class="btn whatsapp">WhatsApp</a><br/>
-  <a href="viber://chat?number=+421951776179" target="_blank" class="btn viber">Viber</a>
+  <div class="overlay">
+    <img src="0412E0F2-41FC-4410-98F6-EB8B3FCD37A6.jpeg" alt="Логотип" class="logo" />
+    <h1>22KM AUTO DETAILING</h1>
+
+    <a href="https://www.instagram.com/22km.sk" target="_blank" class="btn">Instagram</a><br />
+    <a href="https://www.tiktok.com/@22km.sk" target="_blank" class="btn">TikTok</a><br />
+    <a href="https://wa.me/421951776179" target="_blank" class="btn">WhatsApp</a><br />
+    <a href="viber://chat?number=+421951776179" target="_blank" class="btn">Viber</a>
+  </div>
 </body>
 </html>
