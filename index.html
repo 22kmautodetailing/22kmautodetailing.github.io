@@ -9,17 +9,13 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-image: url('IMG_0587.png'); /* фон */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-color: #2e2e2e;
       color: #ffffff;
       text-align: center;
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.7); /* затемнення поверх фото */
+      background-color: rgba(0, 0, 0, 0.6);
       min-height: 100vh;
       padding: 40px 20px;
     }
@@ -31,9 +27,9 @@
 
     h1 {
       font-size: 32px;
-      color: #FFD700;
+      color: #cccccc;
       text-transform: uppercase;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       letter-spacing: 3px;
     }
 
@@ -42,19 +38,31 @@
       margin: 10px;
       padding: 15px 25px;
       font-size: 18px;
-      color: #FFD700;
       text-decoration: none;
       border-radius: 8px;
       width: 220px;
       font-weight: bold;
       background-color: transparent;
-      border: 2px solid #FFD700;
+      border: 2px solid #aaaaaa;
+      color: #aaaaaa;
       transition: 0.3s;
     }
 
     .btn:hover {
-      background-color: #FFD700;
+      background-color: #aaaaaa;
       color: #000000;
+    }
+
+    .main-button {
+      margin-bottom: 40px;
+      font-size: 20px;
+      background-color: #aaaaaa;
+      color: #000000;
+      border: none;
+    }
+
+    .main-button:hover {
+      background-color: #888888;
     }
   </style>
 </head>
@@ -63,10 +71,11 @@
     <img src="IMG_0585.jpeg" alt="Логотип" class="logo" />
     <h1>22KM AUTO DETAILING</h1>
 
-    <a href="https://www.instagram.com/22km.sk" target="_blank" class="btn">Instagram</a><br />
-    <a href="https://www.tiktok.com/@22km.sk" target="_blank" class="btn">TikTok</a><br />
-    <a href="https://wa.me/421951776179" target="_blank" class="btn">WhatsApp</a><br />
-    <a href="viber://chat?number=+421951776179" target="_blank" class="btn">Viber</a>
+    <a href="https://wa.me/421951776179?text=Доброго%20дня!%20Хочу%20записатись%20на%20детейлінг" target="_blank" class="btn main-button">🗓️ Записатись</a><br/>
+    <a href="https://www.instagram.com/22km.sk" target="_blank" class="btn">📷 Instagram</a><br />
+    <a href="https://www.tiktok.com/@22km.sk" target="_blank" class="btn">🎵 TikTok</a><br />
+    <a href="https://wa.me/421951776179" target="_blank" class="btn">💬 WhatsApp</a><br />
+    <a href="viber://chat?number=+421951776179" target="_blank" class="btn">📞 Viber</a>
   </div>
 </body>
 </html>
